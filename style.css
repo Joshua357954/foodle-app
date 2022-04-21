@@ -1,0 +1,272 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+ @font-face {
+    font-family: "Poppins";
+    src: url("./poppins.medium.ttf");
+  }
+
+
+body{
+	font-family: Poppins, sans-serif;
+}
+
+header{
+	/*background-color: #c1c1c1;*/
+	background: url("./pix/fimg (15).jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 260px;
+	width: 100%;
+	border-bottom: 1px solid #c1c1c1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-bar{
+	width:80%;
+	height:50px;
+	margin-top: 40px;
+	background-color: hsl(258,13%,63 %);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	margin-left: 20px;
+	font-family: cursive;
+	color:#fcfcfc;
+	font-size: 38px;
+}
+
+.nav-links ul{
+	cursor: pointer;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-links ul li{
+	margin-right: 22px;
+	list-style-type: none;
+}
+
+header .text-box{
+	text-align: center;
+	margin-top: 40px;
+	width: 400px;
+}
+
+header .text-box .title{
+	font-size: 40px;
+}
+
+header .text-box .sub-title{
+	margin: 0 2px;
+	font-family: system-ui;
+	font-size: 16px;
+	text-align:center;
+	line-height: 1.8;
+}
+
+
+
+/* Section */
+
+main{
+	margin-top: 60px;
+}
+
+.show-case{
+	margin-top: 40px;
+	width:100%;	
+	height: 230px;
+	/*background-color:#d7fdf9;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.show-container{
+	width:80%;
+	/*background-color: #fcfcfc;*/
+}
+
+.show-text-box {
+	width:55%;
+	height: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	/*background-color:cyan;*/
+	line-height: 1.4;
+}
+
+.show-text-box .t-main{
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-bottom: 3px solid red;
+	margin-bottom: 20px;
+	font-family: inherit;
+	font-size: 30px;
+}
+
+.show-text-box p{
+	margin-bottom: 20px;
+	font-family:Goudy Bookletter 1911;
+}
+
+.show-text-box a{
+	color: red;
+	text-decoration: none;
+	border-bottom: 3px solid red;
+}
+
+.show-card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.show-card .image{
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+	background-color: blue;
+	margin-right: 20px;
+}
+
+
+.r-rev{
+	flex-direction: row-reverse;
+}
+
+
+
+/* Footer */
+
+.footer{
+	margin-top: 40px;
+	padding:20px 0 10px;
+	background-color: hsl(10,10%,50%);
+	width: 100%;
+	height:230px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contact{
+
+
+}
+
+.contact input:focus,
+.contact input{
+	padding: 10px 10px;
+	border:none; outline: none;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.contact a{
+	color:black;
+	text-decoration: none;
+	background-color: hsl(10,10%,90%);
+	padding:11px 8px;
+	font-size: 16px; 
+	border-radius: 6px;
+}
+
+
+
+.footer-icon-box{
+	width: 100%;
+	display: flex;
+	padding:30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-icon-box img{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+
+
+
+.footer p{
+	font-family: Red/Black;
+	text-align: center;
+}
+
+.footer p span{
+	color:red;
+
+	width:10px;
+}
+
+
+
+
+
+/* color */
+
+.c-red{
+	color:red;
+}
+
+
+
+@media (max-width:650px){
+	.show-card{
+		flex-direction: column;
+		/*height: 850px;*/
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.nav-links ul{
+		display: none;
+	}
+
+	.show-case{
+		margin:100px 0;
+	}
+
+	header .text-box .title{
+		font-size: 30px;
+	}
+
+	.show-text-box {
+		width: 80%
+	}
+
+	.show-text-box a{
+		border-color: hsl(10,10%,50%);
+	}
+
+	.image{
+		display:none;
+	}
+
+	.r-rev{
+		flex-direction: column;
+	}
+
+	.logo{
+		font-size:30px;
+	}
+
+	.footer{
+		padding: 15px 10px;
+	}
+}
