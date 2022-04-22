@@ -272,4 +272,17 @@ main{
 	.footer{
 		padding: 15px 2px;
 	}
+
+	.contact input:focus,
+	.contact input{
+		font-size: 14px;
+		border-radius: 5px;
+		width:calc(100vw-40px);
+	}
+	.contact a{
+		padding:9.5px 7px;
+		font-size: 13px; 
+		font-weight: bold;
+		border-radius: .3rem;
+	}
 }
